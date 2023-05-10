@@ -6,7 +6,7 @@ require('dotenv').config();
 const cors = require('cors');
 server.use(cors());
 const APIKey = process.env.apiKey;
-const PORT =process.env.port ;
+const PORT =process.env.PORT ;
 const pg = require('pg');
 
 const client = new pg.Client(process.env.DATABASE_URL);
